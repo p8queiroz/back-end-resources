@@ -17,7 +17,7 @@ namespace Back_end_tech.DesignPattern.Factory
         int ID { get; set; }
         string Description { get; set; }
         Status status { get; set; }
-        float Value { get; set; }
+        decimal Value { get; set; }
         
     }
 }

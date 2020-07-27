@@ -11,9 +11,11 @@ namespace Back_end_tech
             //if I want to swap?
             //var ticket = new Ticket();
 
+
+            //benefits: future changes to constructed objects are now centrally located
             var ticket = TicketFactory.Create();
 
-            Console.WriteLine("testing...");
+            Console.WriteLine("...");
             
         }
     }
