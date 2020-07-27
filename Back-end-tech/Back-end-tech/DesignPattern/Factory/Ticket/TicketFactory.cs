@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Back_end_tech.DesignPattern.Factory
 {
-    public static class TicketFactory
+    public class TicketFactory
     {
-        public static Ticket Create() 
+        public static Ticket Create ()
         {
-            return new Ticket();
+            return Ticket.Create(1, "des", Status.Open, 10);
         }
     }
 }

@@ -12,10 +12,10 @@ namespace Back_end_tech
             //var ticket = new Ticket();
 
 
-            //benefits: future changes to constructed objects are now centrally located
+            //benefits: future changes to constructed objects are now centrally locate
             var ticket = TicketFactory.Create();
 
-            Console.WriteLine("...");
+            Console.WriteLine(ticket.ID);
             
         }
     }
