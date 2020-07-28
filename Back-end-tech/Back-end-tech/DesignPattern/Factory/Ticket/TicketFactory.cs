@@ -1,14 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Configuration;
 
-namespace Back_end_tech.DesignPattern.Factory
+namespace Back_end_tech.DesignPattern.Factory.Ticket
 {
     public class TicketFactory
     {
-        public static Ticket Create ()
+        public static ITicket Create ()
         {
-            return Ticket.Create(1, "des", Status.Open, 10);
+
+            var config = Convert.ToBoolean(ConfigurationManager.AppSettings["setting1"]);
+             
+            if(config)
+            {
+                return Ticket.Create(1, "des", Status.Open, 10);
+            }
+            else
+            {
+                return PromoTicket.Create(1, "des");
+            }
+
         }
     }
 }

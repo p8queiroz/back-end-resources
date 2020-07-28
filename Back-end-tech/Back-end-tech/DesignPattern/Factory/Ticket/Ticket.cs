@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Back_end_tech.DesignPattern.Factory
+namespace Back_end_tech.DesignPattern.Factory.Ticket
 {
     //by default, the associations for a enum are int
     public enum Status
@@ -12,7 +12,8 @@ namespace Back_end_tech.DesignPattern.Factory
         Closed  = 2
     }
 
-    public partial class Ticket    {
+    public partial class Ticket : ITicket
+    {
         protected Ticket() { }
 
         private Ticket(int id, string description, Status status, decimal value)

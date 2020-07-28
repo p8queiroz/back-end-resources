@@ -6,4 +6,8 @@
     <RootNamespace>Back_end_tech</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>
