@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,22 +7,31 @@ namespace Back_end_tech.DesignPattern.Singleton
 {
     public  class Ticket
     {
+        
+        //by assinging null to the instance, it guaranteers lazy load
+        private static Ticket instance = null;
+
+        private Ticket() { }
+
         public int ID { get; set; }
         public decimal Value { get; set; }
 
-
-        private Ticket() { }
-        
-        private Ticket(int id, decimal value)
+        public static Ticket Instance
         {
-            ID = id;
-            Value = value;
-        }
+            get
+            {
+                if(instance == null)
+                {
+                    instance = new Ticket();
+                }
 
-        public static Ticket Create(int id, decimal value)
+                return instance;
+            }
+        }  
+
+        public void GetInfo()
         {
-            var entity = new Ticket(id, value);
-            return entity;
+            Console.WriteLine($"{instance.ID} - {instance.Value}");
         }
 
     }
