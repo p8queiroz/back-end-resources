@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Back_end_tech.DesignPattern.Factory
+namespace Back_end_tech.DesignPattern.Factory.Ticket
 {
     public interface ITicket
     {
