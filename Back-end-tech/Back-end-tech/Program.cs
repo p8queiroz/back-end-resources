@@ -1,6 +1,9 @@
 ﻿using Back_end_tech.DesignPattern.Factory.Ticket;
 using  Back_end_tech.DesignPattern.Singleton;
+using Back_end_tech.DesignPattern.Decorator;
+using ThirdPartyLib;
 using System;
+using Back_end_tech.Snipets;
 
 namespace Back_end_tech
 {
@@ -10,7 +13,12 @@ namespace Back_end_tech
         {
             Console.WriteLine("Wellcome to my source playground!");
 
+            var arraysnippet = new ArraySnipets();
+            Console.WriteLine(arraysnippet.GetEvenSum());
+            
+            Console.ReadKey();
 
+          //  var teste = new TicketServiceInfo.GetTicketsList();
 
 
 
