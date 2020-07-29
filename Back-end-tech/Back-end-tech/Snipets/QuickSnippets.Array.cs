@@ -24,6 +24,9 @@ namespace Back_end_tech.Snipets
 
 
             //default value of an array?
+            var teste = new int[1];
+
+            //todo
             int[] i = new int[0];
             Console.WriteLine(i[0]);
         }

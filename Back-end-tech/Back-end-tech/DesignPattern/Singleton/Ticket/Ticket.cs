@@ -16,6 +16,7 @@ namespace Back_end_tech.DesignPattern.Singleton
         public int ID { get; set; }
         public decimal Value { get; set; }
 
+        //todo
         public static Ticket Instance
         {
             get
