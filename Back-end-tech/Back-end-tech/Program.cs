@@ -13,17 +13,16 @@ namespace Back_end_tech
         {
             Console.WriteLine("Wellcome to my source playground!");
 
-            //******************************************************Quick Snipetss
+            //******************************************************Quick Snipets - Math
+            /*
+             QuickSnippets.MathRound();
+             Console.ReadKey();
+             */
+            //******************************************************Quick Snipets - Array
 
-            QuickSnippets.MathRound();
-            Console.ReadKey();
-            
-
-
-            //******************************************************Array Operations
-
-            /*Console.WriteLine(ArraySnipets.GetEvenSum());
-            Console.ReadKey();
+            /*
+             QuickSnippets.ArrayOperations001();
+             Console.ReadKey();
             */
 
 
