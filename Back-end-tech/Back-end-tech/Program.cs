@@ -13,17 +13,22 @@ namespace Back_end_tech
         {
             Console.WriteLine("Wellcome to my source playground!");
 
+
+            //******************************************************Quick Snipets - String
+            //QuickSnippets.StringOperation001();
+            QuickSnippets.TrimOperation();
+
+
+            //******************************************************Quick Snipets - Operator
+            //QuickSnippets.Operation();
+
             //******************************************************Quick Snipets - Math
-            /*
-             QuickSnippets.MathRound();
-             Console.ReadKey();
-             */
+            // QuickSnippets.MathRound();
+
             //******************************************************Quick Snipets - Array
 
-            /*
-             QuickSnippets.ArrayOperations001();
-             Console.ReadKey();
-            */
+
+            //QuickSnippets.ArrayOperations001();
 
 
 
@@ -56,6 +61,7 @@ namespace Back_end_tech
             //var ticket = TicketFactory.Create();
 
 
+            Console.ReadKey();
 
 
         }

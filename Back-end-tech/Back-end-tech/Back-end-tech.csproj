@@ -10,4 +10,12 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DesignPattern\Decorator\Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdPartyLib\ThirdPartyLib.csproj" />
+  </ItemGroup>
+
 </Project>
